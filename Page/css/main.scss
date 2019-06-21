@@ -13,15 +13,24 @@ section.intro {
   background: rgb(4,50,61);
   padding-top: 10em;
   height: calc(100vh - 10em);
-
-  p {
+  .title {
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     margin-top: 3em;
+    margin-left: 3em;
+    position: absolute;
+  }
+  .intro-image {
+    position: absolute;
+    left: 40%;
+    z-index: 1000;
+    overflow: hidden;
+    transform: rotateZ(360deg);
   }
 }
 
 section.anim {
+  z-index: 0;
   background: #1989A6;
   padding: 12em;
   height: calc(100vh - 24em);
