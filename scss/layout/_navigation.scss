@@ -1,0 +1,150 @@
+
+$gold: #d1ad89;
+
+  @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    // border: black 1px solid;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  $backColor: #5d4954;
+  $white: rgb(226, 226, 226);
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    background-color: $backColor;
+    transition: top 0.3s;
+  
+    .logo {
+      color: $white;
+      text-transform: capitalize;
+      font-family: "Great Vibes", cursive;
+      font-size: x-large;
+      color: $gold;
+      letter-spacing: 3px;
+      // font-size: 24px;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+  
+      a {
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+  
+      .active {
+        border-bottom: 2px solid;
+      }
+  
+      a:hover {
+        border-bottom: 2px solid $gold;
+        color: white;
+      }
+  
+      li {
+        list-style: none;
+      }
+    }
+    .burger {
+      display: none;
+      div {
+        width: 25px;
+        height: 3px;
+        background-color: $white;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  @media screen and (max-width: 1224px) {
+    .navbar {
+      .nav-links {
+        width: 42%;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .navbar {
+      .nav-links {
+        width: 50%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      min-height: 8vh;
+      .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: $backColor;
+        flex-direction: column;
+        align-items: center;
+        width: 0;
+        transition: all 0.5s;
+  
+        li {
+          opacity: 0;
+        }
+      }
+      .burger {
+        display: block;
+        cursor: pointer;
+        color: $white;
+      }
+      .nav-active {
+        transition: width 1.5s;
+        width: 50%;
+        display: flex;
+      }
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      } to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px , 6px);
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px , -6px);
+    }
+  }
+  
+  
+  
