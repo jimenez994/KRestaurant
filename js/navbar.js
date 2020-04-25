@@ -1,8 +1,8 @@
-export const navSlide = () => {
+const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
-  alert("hi")
+
   // burger
   burgerClick = burger.addEventListener("click", () => {
     // toggle nav
@@ -48,3 +48,44 @@ export const navSlide = () => {
     prevScrollpos = currentScrollPos;
   })
 };
+
+const navScroll = () => {
+  let mainNavLinks = document.querySelectorAll(".navbar ul li a");
+  let mainSections = document.querySelectorAll("main section");
+
+  let lastId;
+  let cur = [];
+
+  // scroll
+  window.addEventListener("scroll", (event) => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link) => {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+
+  // click
+  mainNavLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      let target = document.querySelector(event.target.hash);
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  });
+};
+
+navSlide();
+navScroll();
