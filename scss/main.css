@@ -10,6 +10,8 @@ html {
 }
 
 .navbar {
+  z-index: 1;
+  padding-top: 1vh;
   position: fixed;
   width: 100%;
   top: 0;
@@ -43,17 +45,17 @@ html {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
 }
 
 .navbar .nav-links a {
   color: #dcdada;
   text-decoration: none;
+  margin-left: 15px;
   font-size: 17px;
 }
 
 .navbar .nav-links .active {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #d1ad89;
 }
 
 .navbar .nav-links a:hover {
@@ -201,8 +203,8 @@ header {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   -webkit-box-align: center;
@@ -211,11 +213,26 @@ header {
 }
 
 header img {
-  width: 90%;
+  width: 70%;
+  margin: 2vh;
 }
 
 header .header-text-box {
-  text-align: right;
+  text-align: left;
+}
+
+header .header-text-box div {
+  float: right;
+  text-transform: capitalize;
+}
+
+header .header-text-box div button {
+  width: 20vh;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  color: #dcdada;
+  background-color: #1A191A;
 }
 
 * {

@@ -7,6 +7,8 @@
   }
   
   .navbar {
+    z-index: 1;
+    padding-top: 1vh;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,22 +28,24 @@
       color: $gold;
       letter-spacing: 3px;
       // font-size: 24px;
+      // width: 0%;
     }
     .nav-links {
       display: flex;
       justify-content: space-around;
-      width: 30%;
+      // width: 60%;
   
       a {
         color: $white;
         text-decoration: none;
         // letter-spacing: 3px;
         // font-weight: bold;
+        margin-left: 15px;
         font-size: 17px;
       }
   
       .active {
-        border-bottom: 2px solid;
+        border-bottom: 2px solid $gold;
       }
   
       a:hover {
