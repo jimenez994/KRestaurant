@@ -28,6 +28,7 @@ html {
   background-color: #1A191A;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
+  text-transform: capitalize;
 }
 
 .navbar .logo {
@@ -212,11 +213,6 @@ header {
           align-items: center;
 }
 
-header img {
-  width: 70%;
-  margin: 2vh;
-}
-
 header .header-text-box {
   text-align: left;
 }
@@ -227,12 +223,21 @@ header .header-text-box div {
 }
 
 header .header-text-box div button {
+  margin-top: 5vh;
   width: 20vh;
   height: 40px;
   font-size: large;
   font-weight: bold;
   color: #dcdada;
   background-color: #1A191A;
+}
+
+header .header-image-box {
+  position: relative;
+}
+
+header .header-image-box .plate {
+  position: absolute;
 }
 
 * {
