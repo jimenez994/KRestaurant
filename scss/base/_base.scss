@@ -6,15 +6,19 @@
     box-sizing: inherit;
 }
 
-img{
-  width: 100%;
-}
+// img{
+//   width: 100%;
+// }
 
 body, html {
   height: cal(100% -2em);
   margin: 0;
   font-family: "Montserrat";
   color: white;
+}
+
+section {
+  // margin: 2vh;
 }
 
 
