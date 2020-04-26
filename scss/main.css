@@ -10,7 +10,7 @@ html {
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 100;
   padding-top: 1vh;
   position: fixed;
   width: 100%;
@@ -232,12 +232,14 @@ header .header-text-box div button {
   background-color: #1A191A;
 }
 
-header .header-image-box {
-  position: relative;
+header .header-image-box img {
+  position: absolute;
+  top: 0px;
+  width: 55%;
 }
 
 header .header-image-box .plate {
-  position: absolute;
+  z-index: 1;
 }
 
 * {

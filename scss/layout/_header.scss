@@ -23,15 +23,19 @@ header{
     }
   }
       .header-image-box {
-        position: relative;
+        // align-items: center;
+        // position: relative;
         img{
-          // position: absolute;
+          position: absolute;
+          top: 0px;
+          width: 55%;
         }
         .smoke {
 
         }
         .plate {
-          position: absolute;
+          z-index: 1;
+          // position: absolute;
           // width: 70%;
           // margin: 5vh;
         }
