@@ -1,21 +1,10 @@
 
-$gold: #d1ad89;
-
   @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    // border: black 1px solid;
-  }
   
   html {
     scroll-behavior: smooth;
   }
-  
-  $backColor: #5d4954;
-  $white: rgb(226, 226, 226);
   
   .navbar {
     position: fixed;
@@ -26,7 +15,7 @@ $gold: #d1ad89;
     align-items: center;
     height: 48px;
     font-family: "Poppins", sans-serif;
-    background-color: $backColor;
+    background-color: $black;
     transition: top 0.3s;
   
     .logo {
@@ -46,8 +35,8 @@ $gold: #d1ad89;
       a {
         color: $white;
         text-decoration: none;
-        letter-spacing: 3px;
-        font-weight: bold;
+        // letter-spacing: 3px;
+        // font-weight: bold;
         font-size: 17px;
       }
   
