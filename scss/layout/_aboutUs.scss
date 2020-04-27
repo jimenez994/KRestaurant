@@ -25,6 +25,13 @@
       // display: inline-block;
       float: left;
       color: black;
+      h1{
+        text-transform: capitalize;
+      }
+      p{
+        margin-top: 2.5vh;
+      }
+
     }
   }
 }

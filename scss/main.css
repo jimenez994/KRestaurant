@@ -5,6 +5,17 @@
   font-size: 48px;
 }
 
+.fancy-text {
+  text-transform: capitalize;
+  font-family: "Great Vibes", cursive;
+  font-size: x-large;
+  color: #d1ad89;
+}
+
+.gold-text {
+  color: #d1ad89;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,11 +43,6 @@ html {
 }
 
 .navbar .logo {
-  color: #dcdada;
-  text-transform: capitalize;
-  font-family: "Great Vibes", cursive;
-  font-size: x-large;
-  color: #d1ad89;
   letter-spacing: 3px;
 }
 
@@ -261,6 +267,14 @@ header .header-image-box .plate {
   margin: 2vh;
   float: left;
   color: black;
+}
+
+#about-us .card .card-textbox h1 {
+  text-transform: capitalize;
+}
+
+#about-us .card .card-textbox p {
+  margin-top: 2.5vh;
 }
 
 * {

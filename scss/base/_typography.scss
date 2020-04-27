@@ -4,3 +4,14 @@ body {
 .heading-primary {
   font-size: 48px;
 }
+
+.fancy-text {
+  text-transform: capitalize;
+  font-family: "Great Vibes", cursive;
+  font-size: x-large;
+  color: $gold;
+}
+
+.gold-text {
+  color: $gold;
+}
