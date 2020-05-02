@@ -1,6 +1,4 @@
-body {
-  // font-family: 'l';
-}
+
 .heading-primary {
   font-size: 48px;
 }
@@ -8,9 +6,11 @@ body {
 .fancy-text {
   text-transform: capitalize;
   font-family: "Great Vibes", cursive;
-  font-size: x-large;
+  font-size: 2.5em;
   color: $gold;
+  margin: 0;
 }
+
 
 .gold-text {
   color: $gold;

@@ -1,19 +1,79 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-.heading-primary {
-  font-size: 48px;
+.card {
+  margin-top: 30vh;
+  max-width: 1200px;
+  display: inline-block;
+  background-color: white;
+  height: 40vh;
 }
 
-.fancy-text {
+.card img {
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40%;
+  float: left;
+}
+
+.card .card-textbox {
+  text-align: left;
+  width: 50%;
+  margin: 2vh;
+  float: left;
+  color: black;
+}
+
+.card .card-textbox h1 {
   text-transform: capitalize;
-  font-family: "Great Vibes", cursive;
-  font-size: x-large;
-  color: #d1ad89;
+  margin: 0;
 }
 
-.gold-text {
-  color: #d1ad89;
+.card .card-textbox p {
+  margin-top: 2.5vh;
+}
+
+header {
+  text-align: left;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+header .header-text-box {
+  text-align: left;
+  margin-top: 40vh;
+}
+
+header .header-text-box div {
+  float: right;
+  text-transform: capitalize;
+}
+
+header .header-text-box div button {
+  margin-top: 5vh;
+  width: 20vh;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  color: #dcdada;
+  background-color: #131313;
+}
+
+header .header-image-box img {
+  position: absolute;
+  top: 4vh;
+  width: 55%;
+}
+
+header .header-image-box .plate {
+  z-index: 1;
 }
 
 html {
@@ -173,10 +233,46 @@ html {
   }
 }
 
+#about-us {
+  height: 100vh;
+}
+
+#menu .main-menu-text-box {
+  margin-top: 20vh;
+  display: block;
+}
+
+#menu .main-menu-text-box .main-menu-title {
+  text-align: right;
+  display: inline-block;
+}
+
+#menu .main-menu-text-box p {
+  width: 60vw;
+  display: inline-block;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.heading-primary {
+  font-size: 48px;
+}
+
+.fancy-text {
+  text-transform: capitalize;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+  color: #d1ad89;
+  margin: 0;
+}
+
+.gold-text {
+  color: #d1ad89;
+}
+
 *,
 *::after,
 *::before {
-  margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -184,100 +280,20 @@ html {
 
 body, html {
   height: cal(100% -2em);
-  margin: 0;
+  margin: 0 auto;
   font-family: "Montserrat";
   color: white;
+  text-align: center;
 }
 
 body {
+  max-width: 2560px;
+  max-height: 1440px;
   background-color: #131313;
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-header {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .header-text-box {
-  text-align: left;
-}
-
-header .header-text-box div {
-  float: right;
-  text-transform: capitalize;
-}
-
-header .header-text-box div button {
-  margin-top: 5vh;
-  width: 20vh;
-  height: 40px;
-  font-size: large;
-  font-weight: bold;
-  color: #dcdada;
-  background-color: #131313;
-}
-
-header .header-image-box img {
-  position: absolute;
-  top: 4vh;
-  width: 55%;
-}
-
-header .header-image-box .plate {
-  z-index: 1;
-}
-
-#about-us {
-  height: 100vh;
-  text-align: center;
-}
-
-#about-us .card {
-  margin-top: 30vh;
-  max-width: 1200px;
-  display: inline-block;
-  background-color: white;
-  height: 40vh;
-}
-
-#about-us .card img {
-  height: 40vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 40%;
-  float: left;
-}
-
-#about-us .card .card-textbox {
-  text-align: left;
-  width: 50%;
-  margin: 2vh;
-  float: left;
-  color: black;
-}
-
-#about-us .card .card-textbox h1 {
-  text-transform: capitalize;
-}
-
-#about-us .card .card-textbox p {
-  margin-top: 2.5vh;
-}
-
-* {
-  /* border: solid green 1px; */
 }
 /*# sourceMappingURL=main.css.map */

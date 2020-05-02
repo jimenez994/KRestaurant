@@ -3,15 +3,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-@import 'base/typography';
-
-@import 'layout/navigation';
-@import 'base/base';
-@import 'layout/header';
-
 @import 'components/card';
+
+@import 'layout/header';
+@import 'layout/navigation';
 @import 'layout/aboutUs';
+@import 'layout/menu';
+
+@import 'base/typography';
+@import 'base/base';
 
 *{
-  /* border: solid green 1px; */
+  // border: solid green 1px; 
 }

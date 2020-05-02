@@ -1,0 +1,19 @@
+#menu{
+  .main-menu-text-box{
+  margin-top: 20vh;
+    display: block;
+    .main-menu-title{
+      text-align: right;
+      display: inline-block;
+      
+    }
+    p{
+      // margin-top: 0;
+      width: 60vw;
+      display: inline-block;
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+}
+
