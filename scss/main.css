@@ -34,6 +34,62 @@
   margin-top: 2.5vh;
 }
 
+.menu-item-left {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.menu-item-left .menu-img-box {
+  text-align: right;
+}
+
+.menu-item-left .menu-img-box img {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.menu-item-left .menu-item-text {
+  text-align: left;
+  height: 100%;
+  width: 65%;
+  margin-left: 10%;
+  margin-top: 11%;
+}
+
+.menu-item-right {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.menu-item-right .menu-img-box {
+  text-align: left;
+}
+
+.menu-item-right .menu-img-box img {
+  width: 60%;
+  margin-left: 10%;
+}
+
+.menu-item-right .menu-item-text {
+  text-align: right;
+  height: 100%;
+  margin-right: 10%;
+  margin-top: 11%;
+}
+
+.menu-item-right .menu-item-text p {
+  width: 65%;
+  float: right;
+}
+
 header {
   text-align: left;
   height: 100vh;
@@ -68,8 +124,8 @@ header .header-text-box div button {
 
 header .header-image-box img {
   position: absolute;
-  top: 4vh;
-  width: 55%;
+  top: 9vh;
+  width: 50%;
 }
 
 header .header-image-box .plate {
@@ -264,6 +320,10 @@ html {
   font-size: 2.5em;
   color: #d1ad89;
   margin: 0;
+}
+
+.text-xl {
+  font-size: 2em;
 }
 
 .gold-text {
