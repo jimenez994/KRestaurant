@@ -90,6 +90,15 @@
   float: right;
 }
 
+.best-ingridients {
+  margin-top: 20em;
+}
+
+.best-ingridients p {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   text-align: left;
   height: 100vh;
@@ -324,6 +333,7 @@ html {
 
 .text-xl {
   font-size: 2em;
+  text-transform: capitalize;
 }
 
 .gold-text {
