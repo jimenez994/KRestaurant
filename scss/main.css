@@ -91,12 +91,21 @@
 }
 
 .best-ingridients {
-  margin-top: 20em;
+  margin-top: 10em;
+}
+
+.best-ingridients h1 {
+  margin: 0;
 }
 
 .best-ingridients p {
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 2em auto 0;
+}
+
+.best-ingridients img {
+  width: 40%;
+  margin-top: -2em;
 }
 
 header {
@@ -298,10 +307,6 @@ html {
   }
 }
 
-#about-us {
-  height: 100vh;
-}
-
 #menu .main-menu-text-box {
   margin-top: 20vh;
   display: block;
@@ -317,6 +322,10 @@ html {
   display: inline-block;
   text-align: left;
   margin-left: 10px;
+}
+
+img {
+  width: 100%;
 }
 
 .heading-primary {
