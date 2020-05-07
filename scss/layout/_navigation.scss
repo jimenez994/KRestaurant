@@ -90,6 +90,7 @@
     .navbar {
       min-height: 8vh;
       .nav-links {
+        padding: 0px;
         position: fixed;
         right: 0px;
         height: 92vh;
@@ -99,7 +100,7 @@
         align-items: center;
         width: 0;
         transition: all 0.5s;
-  
+        // visibility: hidden;
         li {
           opacity: 0;
         }
@@ -113,6 +114,7 @@
         transition: width 1.5s;
         width: 50%;
         display: flex;
+        // visibility: visible;
       }
     }
   
