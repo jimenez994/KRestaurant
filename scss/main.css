@@ -109,20 +109,28 @@
   margin-top: -2em;
 }
 
-header .header-text-box {
-  margin-top: 40vh;
-  display: inline-block;
+header {
+  width: calc(100% - 5rem);
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header .header-text-box div {
+header .header-text-box {
+  margin-right: 0em;
+  display: inline-block;
   text-align: left;
   text-transform: capitalize;
 }
 
-header .header-text-box div button {
-  margin-top: 5vh;
-  width: 20vh;
-  height: 40px;
+header .header-text-box button {
+  margin-top: 2rem;
+  width: 7.5rem;
+  height: 2.3rem;
   font-size: large;
   font-weight: bold;
   color: #dcdada;
@@ -130,31 +138,32 @@ header .header-text-box div button {
 }
 
 header .header-image-box {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
   display: inline-block;
-  width: 49%;
   text-align: left;
 }
 
 header .header-image-box img {
+  display: block;
   position: absolute;
-  top: 9vh;
-  width: 48%;
+  top: 2rem;
+  width: 90%;
 }
 
 header .header-image-box .plate {
   z-index: 1;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .navbar {
-  z-index: 100;
-  padding-top: 1vh;
+  z-index: 5;
+  padding-top: 1rem;
   position: fixed;
   width: 100%;
-  top: 0;
+  max-width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +323,7 @@ html {
 }
 
 #menu .main-menu-text-box p {
-  width: 60vw;
+  width: 60%;
   display: inline-block;
   text-align: left;
   margin-left: 10px;
@@ -374,7 +383,7 @@ html {
 }
 
 .heading-primary {
-  font-size: 48px;
+  font-size: 58px;
 }
 
 .fancy-text {
@@ -402,16 +411,20 @@ html {
           box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
-  height: cal(100% -2em);
+  height: calc(100% -2em);
   font-family: "Montserrat";
   color: white;
   text-align: center;
 }
 
 body {
-  max-width: 2560px;
-  max-height: 1440px;
+  max-width: 1500px;
+  position: relative;
   background-color: #131313;
 }
 

@@ -1,46 +1,42 @@
-header{
-  // height: 100vh;
-  // width: 100%;
-  // display: grid;
-  // grid-template-columns: 40% 50% ;
-  // grid-template-rows: auto;
-  // display: block;
-
-  .header-text-box{
-    // text-align: right;
-    margin-top: 40vh;
-    // width: 50%;
+header {
+  width: calc(100% - 5rem);
+  height: 800px;
+  display: flex;
+  align-items: center;
+  .header-text-box {
+    margin-right: 0em;
     display: inline-block;
-    div{
-      // float: right;
-      // display: block;
-      text-align: left;
-      text-transform: capitalize;
-      button {
-        margin-top: 5vh;
-        width: 20vh;
-        height: 40px;
-        font-size: large;
-        font-weight: bold;
-        color: $white;
-        background-color: $black;
-      }
+    text-align: left;
+    text-transform: capitalize;
+    // position: relative;
+    button {
+      margin-top: 2rem;
+      width: 7.5rem;
+      height: 2.3rem;
+      font-size: large;
+      font-weight: bold;
+      color: $white;
+      background-color: $black;
     }
   }
   .header-image-box {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
     display: inline-block;
-    width: 49%;
+    // width: 49%;
     text-align: left;
-    img{
+    img {
+      display: block;
       position: absolute;
-      top: 9vh;
-      width: 48%;
-      // margin-left: -17.5em;
+      top: 2rem;
+      width: 90%;
+      // height: 100%;
     }
     .plate {
       z-index: 1;
     }
   }
-
-  
 }
