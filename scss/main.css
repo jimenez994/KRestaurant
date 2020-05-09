@@ -2,15 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 .card {
-  margin-top: 30vh;
+  margin-top: 10rem;
   max-width: 1200px;
   display: inline-block;
   background-color: white;
-  height: 40vh;
+  margin-bottom: 10rem;
 }
 
 .card img {
-  height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
   width: 40%;
@@ -20,7 +19,7 @@
 .card .card-textbox {
   text-align: left;
   width: 50%;
-  margin: 2vh;
+  margin: 1rem;
   float: left;
   color: black;
 }
@@ -34,9 +33,35 @@
   margin-top: 2.5vh;
 }
 
+@media screen and (max-width: 768px) {
+  .card {
+    display: block;
+    background-color: white;
+    padding-bottom: 10px;
+  }
+  .card img {
+    width: 100%;
+    display: inline-block;
+  }
+  .card .card-textbox {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  .card .card-textbox h1 {
+    margin: 0 10px;
+  }
+  .card .card-textbox p {
+    margin: 0 10px 10px;
+  }
+}
+
 .menu-item-left {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -58,6 +83,12 @@
   width: 65%;
   margin-left: 10%;
   margin-top: 11%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item-left .menu-img-box img {
+    width: 100%;
+  }
 }
 
 .menu-item-right {
@@ -111,7 +142,7 @@
 
 header {
   width: calc(100% - 6rem);
-  height: 800px;
+  height: 950px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +156,10 @@ header .header-text-box {
   display: inline-block;
   text-align: left;
   text-transform: capitalize;
+}
+
+header .header-text-box h1 {
+  font-size: 58px;
 }
 
 header .header-text-box button {
@@ -158,9 +193,73 @@ header .header-image-box .plate {
   z-index: 1;
 }
 
+header .mobile-plate, header .cover {
+  display: none;
+}
+
 @media screen and (max-width: 1300px) {
   header {
-    height: 1000px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  header {
+    height: 700px;
+  }
+  header .header-text-box {
+    margin-right: -.5rem;
+  }
+  header .header-text-box h1 {
+    font-size: 2rem;
+  }
+  header .header-text-box button {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 575px;
+  }
+  header .header-text-box h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+    width: 100%;
+  }
+  header .header-text-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+  header .header-text-box button {
+    background-color: transparent;
+  }
+  header .header-image-box {
+    display: none;
+  }
+  header .cover {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-color: rgba(48, 48, 48, 0.5);
+  }
+  header .mobile-plate {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -319,11 +418,12 @@ header .header-image-box .plate {
 }
 
 #menu .main-menu-text-box {
-  margin-top: 20vh;
+  margin-top: 5rem;
   display: block;
 }
 
 #menu .main-menu-text-box .main-menu-title {
+  vertical-align: top;
   text-align: right;
   display: inline-block;
 }
@@ -333,6 +433,26 @@ header .header-image-box .plate {
   display: inline-block;
   text-align: left;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  #menu .main-menu-text-box {
+    display: block;
+  }
+  #menu .main-menu-text-box .main-menu-title h1 {
+    text-align: center;
+  }
+  #menu .main-menu-text-box p {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    margin-left: 0;
+  }
 }
 
 .reservation {
@@ -392,10 +512,6 @@ header .header-image-box .plate {
     display: block;
     width: calc(100% - 2rem);
   }
-}
-
-.heading-primary {
-  font-size: 58px;
 }
 
 .fancy-text {

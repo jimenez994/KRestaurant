@@ -1,29 +1,58 @@
-.card{
-  margin-top: 30vh;
+.card {
+  margin-top: 10rem;
   max-width: 1200px;
   display: inline-block;
   background-color: white;
-  height: 40vh;
+  margin-bottom: 10rem;
 
-  img{
-    height: 40vh;
+  img {
     object-fit: cover;
     width: 40%;
+    // height: 100%;
     float: left;
   }
-  .card-textbox{
-    text-align:left;
+  .card-textbox {
+    text-align: left;
     width: 50%;
-    margin: 2vh;
+    margin: 1rem;
     float: left;
     color: black;
-    h1{
+    h1 {
       text-transform: capitalize;
       margin: 0;
     }
-    p{
+    p {
       margin-top: 2.5vh;
     }
-
+  }
+}
+@media screen and (max-width: $smallScreen) {
+  .card {
+    display: block;
+    background-color: white;
+    // width: 100%;
+    // text-align: center;
+    padding-bottom: 10px;
+    img{
+      width: 100%;
+      display: inline-block;
+      // float: none;
+    }
+    .card-textbox{
+    // padding: 10px;
+      display: inline-block;
+      float: none;
+      width: 100%;
+      display: block;
+      margin: 0px;
+      margin-top: 0px;
+      h1{
+        margin: 0 10px;
+      }
+      p{
+        // width: calc(100% - 10px);
+        margin: 0 10px 10px;
+      }
+    }
   }
 }

@@ -1,13 +1,13 @@
-#menu{
-  .main-menu-text-box{
-  margin-top: 20vh;
+#menu {
+  .main-menu-text-box {
+    margin-top: 5rem;
     display: block;
-    .main-menu-title{
+    .main-menu-title {
+      vertical-align: top;
       text-align: right;
       display: inline-block;
-      
     }
-    p{
+    p {
       // margin-top: 0;
       width: 60%;
       display: inline-block;
@@ -17,3 +17,25 @@
   }
 }
 
+@media screen and (max-width: $smallScreen) {
+  #menu {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    .main-menu-text-box {
+
+      .main-menu-title {
+        h1 {
+          text-align: center;
+        }
+      }
+      display: block;
+      p {
+        text-align: center;
+        padding: 10px;
+        width: auto;
+        margin-left: 0;
+      }
+    }
+  }
+}

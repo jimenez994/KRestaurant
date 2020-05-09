@@ -1,6 +1,6 @@
 header {
   width: calc(100% - 6rem);
-  height: 800px;
+  height: 950px;
   display: flex;
   align-items: center;
   .header-text-box {
@@ -8,6 +8,9 @@ header {
     display: inline-block;
     text-align: left;
     text-transform: capitalize;
+    h1{
+      font-size: 58px;
+    }
     button {
       margin-top: 3rem;
       width: 7.5rem;
@@ -36,9 +39,84 @@ header {
       z-index: 1;
     }
   }
+      .mobile-plate, .cover{
+        display: none;
+      }
+
 }
 @media screen and (max-width: 1300px){
   header{
-    height: 1000px;
+    height: 800px;
   }
+}
+@media screen and (max-width: 1050px){
+  header{
+    height: 700px;
+    .header-text-box{
+      margin-right: -.5rem;
+      h1{
+        font-size: 2rem;
+      }
+      button{
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  header{
+    height: 575px;
+    .header-text-box{
+      // margin-right: -.5rem;
+      h1{
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smallScreen) { 
+header{
+  position: relative;
+  width: 100%;
+//   height: 500px;
+//   text-align: center;
+//   display: flex;
+//   background-image: linear-gradient(
+//     to right bottom,
+//     rgba($gold, 0.1),
+//     rgba(rgb(0, 0, 0), 0.3)),
+// url(../images/pikemacho.jpg);
+// background-size: cover;
+  .header-text-box{
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      
+    }
+    button{
+      background-color: transparent;
+    }
+  }
+  .header-image-box{
+    display: none;
+  }
+  .cover{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(48, 48, 48, 0.5);
+  }
+  .mobile-plate{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 }
