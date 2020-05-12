@@ -1,22 +1,24 @@
 .reservation {
-  width: 100%;
+
+  text-align: center;
   margin-top: 10em;
-  /* The image used */
+  // /* The image used */
   background-image: url("./../images/restaurant.jpg");
+    position: relative;
+  // /* Set a specific height */
+  height: 400px;
 
-  /* Set a specific height */
-  min-height: 400px;
-
-  /* Create the parallax scrolling effect */
+  // /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // text-align: center;
+  // // text-align: center;
   div {
-    min-height: 200px;
-    display: block;
-    // margin-top: 8%;
+    width: 100%;
+    top: 20%;
+    position: absolute;
+
     h1:first-child {
       text-transform: capitalize;
       font-family: "Great Vibes", cursive;
@@ -37,6 +39,7 @@
 @media screen and (max-width: $smallScreen) {
   .reservation {
     vertical-align: middle;
+    background-attachment: scroll;
     div {
       vertical-align: middle;
       margin-top: 30%;

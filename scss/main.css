@@ -188,7 +188,7 @@
 
 .best-ingridients img {
   width: 40%;
-  margin-top: -2em;
+  margin-top: 0em;
 }
 
 @media screen and (max-width: 768px) {
@@ -517,13 +517,11 @@ header .mobile-plate, header .cover {
 }
 
 .reservation {
-  width: 100%;
+  text-align: center;
   margin-top: 10em;
-  /* The image used */
   background-image: url("./../images/restaurant.jpg");
-  /* Set a specific height */
-  min-height: 400px;
-  /* Create the parallax scrolling effect */
+  position: relative;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -531,8 +529,9 @@ header .mobile-plate, header .cover {
 }
 
 .reservation div {
-  min-height: 200px;
-  display: block;
+  width: 100%;
+  top: 20%;
+  position: absolute;
 }
 
 .reservation div h1:first-child {
@@ -555,6 +554,7 @@ header .mobile-plate, header .cover {
 @media screen and (max-width: 768px) {
   .reservation {
     vertical-align: middle;
+    background-attachment: scroll;
   }
   .reservation div {
     vertical-align: middle;

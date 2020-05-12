@@ -28,7 +28,6 @@ const navSlide = () => {
   var prevScrollpos = window.pageYOffset;
   window.addEventListener('scroll', () => {
     var currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos);
     
     this.document.querySelector('.nav-links').classList.remove('nav-active');
 
