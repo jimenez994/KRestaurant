@@ -28,6 +28,8 @@ const navSlide = () => {
   var prevScrollpos = window.pageYOffset;
   window.addEventListener('scroll', () => {
     var currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos);
+    
     this.document.querySelector('.nav-links').classList.remove('nav-active');
 
     // navbar toi default settings
@@ -40,9 +42,9 @@ const navSlide = () => {
     })
 
     // hide navbar when scroll
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || currentScrollPos < 8) {
       document.getElementById("navbar").style.top = "0";
-    } else {
+    }else {
       document.getElementById("navbar").style.top = "-64px";
     }
     prevScrollpos = currentScrollPos;
