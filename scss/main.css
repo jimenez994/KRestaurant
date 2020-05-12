@@ -556,10 +556,6 @@ header .mobile-plate, header .cover {
     vertical-align: middle;
     background-attachment: scroll;
   }
-  .reservation div {
-    vertical-align: middle;
-    margin-top: 30%;
-  }
 }
 
 #contact {
