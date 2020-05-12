@@ -6,7 +6,7 @@
   max-width: 1200px;
   display: inline-block;
   background-color: white;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .card img {
@@ -35,6 +35,8 @@
 
 @media screen and (max-width: 768px) {
   .card {
+    margin-bottom: 5rem;
+    margin-top: 7rem;
     display: block;
     background-color: white;
     padding-bottom: 10px;
@@ -46,117 +48,128 @@
   .card .card-textbox {
     display: inline-block;
     float: none;
-    width: 100%;
-    display: block;
-    margin: 0px;
-    margin-top: 0px;
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
   }
-  .card .card-textbox h1 {
-    margin: 0 10px;
-  }
-  .card .card-textbox p {
-    margin: 0 10px 10px;
+  .card .card-textbox h1:first-of-type {
+    margin-top: 0.5rem;
+    margin-bottom: -1rem;
   }
 }
 
 .menu-item-left {
   margin-top: 3rem;
-  margin-bottom: 3rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.menu-item-left .menu-img-box {
-  text-align: right;
+.menu-item-left div {
+  display: inline-block;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .menu-item-left .menu-img-box img {
-  width: 60%;
-  margin-right: 10%;
+  width: 65%;
+  margin-right: -5rem;
 }
 
 .menu-item-left .menu-item-text {
+  margin-left: -0.1rem;
   text-align: left;
-  height: 100%;
-  width: 65%;
-  margin-left: 10%;
-  margin-top: 11%;
+  width: 75%;
 }
 
-.boxes button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  border: none;
-  margin-bottom: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  background: gold;
-  color: #000;
+.menu-item-left .menu-item-text h2 {
+  margin-top: 4.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .boxes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .boxes button {
-    -ms-grid-row: 1;
-    grid-row: 1;
+@media screen and (max-width: 768px) {
+  .menu-item-left {
     display: block;
   }
-  .boxes button:nth-of-type(1) {
+  .menu-item-left .menu-img-box img {
+    margin-right: inherit;
+  }
+  .menu-item-left .menu-item-text {
+    margin-left: inherit;
+    width: 95%;
+    text-align: inherit;
+    margin-bottom: 2rem;
+  }
+  .menu-item-left .menu-item-text h2 {
+    margin-top: 1rem;
+  }
+  .menu-item-left .menu-img-box:nth-of-type(1) {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .boxes button:nth-of-type(2) {
+  .menu-item-left .menu-item-text:nth-of-type(2) {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-  .menu-item-left {
-    width: 100vw;
-    display: block;
-  }
   .menu-item-left div {
-    width: 100vw;
+    display: block;
   }
 }
 
 .menu-item-right {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 3rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.menu-item-right .menu-img-box {
-  text-align: left;
+.menu-item-right div {
+  display: inline-block;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .menu-item-right .menu-img-box img {
-  width: 60%;
-  margin-left: 10%;
+  width: 65%;
+  margin-left: -5rem;
 }
 
 .menu-item-right .menu-item-text {
+  margin-right: 0.1rem;
   text-align: right;
-  height: 100%;
-  margin-right: 10%;
-  margin-top: 11%;
+  width: 75%;
 }
 
-.menu-item-right .menu-item-text p {
-  width: 65%;
-  float: right;
+.menu-item-right .menu-item-text h2 {
+  margin-top: 4.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item-right {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .menu-item-right .menu-img-box {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .menu-item-right .menu-img-box img {
+    margin: 0 auto;
+  }
+  .menu-item-right .menu-item-text {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin: 0rem auto 2rem;
+    width: 95%;
+    text-align: inherit;
+  }
+  .menu-item-right .menu-item-text h2 {
+    margin-top: 1rem;
+  }
 }
 
 .best-ingridients {
@@ -176,6 +189,16 @@
 .best-ingridients img {
   width: 40%;
   margin-top: -2em;
+}
+
+@media screen and (max-width: 768px) {
+  .best-ingridients p {
+    width: 90vw;
+  }
+  .best-ingridients img {
+    width: 90vw;
+    margin-top: 0;
+  }
 }
 
 header {
@@ -497,7 +520,7 @@ header .mobile-plate, header .cover {
   width: 100%;
   margin-top: 10em;
   /* The image used */
-  background-image: url("./../../images/restaurant.jpg");
+  background-image: url("./../images/restaurant.jpg");
   /* Set a specific height */
   min-height: 400px;
   /* Create the parallax scrolling effect */
@@ -505,11 +528,11 @@ header .mobile-plate, header .cover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 .reservation div {
-  display: inline-block;
+  min-height: 200px;
+  display: block;
   margin-top: 8%;
 }
 
@@ -518,6 +541,22 @@ header .mobile-plate, header .cover {
   font-family: "Great Vibes", cursive;
   font-size: xx-large;
   letter-spacing: 0.1em;
+}
+
+.reservation div h1:last-of-type {
+  margin: 1rem;
+}
+
+.reservation div .contact-link {
+  margin-top: 2rem;
+  border: solid 1px;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation div {
+    margin-top: 30%;
+  }
 }
 
 #contact {
@@ -537,7 +576,7 @@ header .mobile-plate, header .cover {
 #contact div {
   vertical-align: top;
   display: inline-block;
-  width: 25%;
+  width: 31%;
 }
 
 #contact div h4 {

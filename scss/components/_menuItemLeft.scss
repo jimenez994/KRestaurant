@@ -1,95 +1,56 @@
 .menu-item-left {
   margin-top: 3rem;
-  margin-bottom: 3rem;
-
   display: grid;
-  grid-template-columns: 50% 50%;
-
-  .menu-img-box {
-    text-align: right;
-    img {
-      width: 60%;
-      margin-right: 10%;
-    }
-  }
-  .menu-item-text {
-    text-align: left;
-    height: 100%;
-    width: 65%;
-    margin-left: 10%;
-    margin-top: 11%;
-  }
-}
-.boxes button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  border: none;
-  margin-bottom: 5px;
-  box-sizing: border-box;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  background: gold;
-  color: #000;
-}
-
-@media screen and (min-width: $smallScreen) {
-  .boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .boxes button {
+  grid-template-columns: repeat(2, 1fr);
+  div{
+    display: inline-block;
     grid-row: 1;
-    display: block;
+
   }
-
-  .boxes button:nth-of-type(1) {
-    grid-column: 1;
-  }
-
-  .boxes button:nth-of-type(2) {
-    grid-column: 2;
-  }
-
-  // .boxes button:nth-of-type(3) {
-  //   grid-column: 2;
-  // }
-
-  // .boxes button:nth-of-type(4) {
-  //   grid-column: 4;
-  // }
-
-  
-
-  .menu-item-left {
-    width: 100vw;
-    // display: flex;
-    display: block;
-    // flex-direction: row-reverse;
-    // grid-template-columns: repeat(4, 1fr);
-    div {
-      // margin: 0 auto;
-      // grid-row: 1;
-      width: 100vw;
-      // display: block;
+  .menu-img-box{
+    img{
+      width: 65%;
+      margin-right: -5rem;
     }
-    .menu-img-box {
-      // display: block;
-      img {
-        // width: 100vw;
-        // margin: 0;
+  }
+  .menu-item-text{
+    margin-left: -0.1rem;
+    text-align: left;
+    width: 75%;
+    h2{
+      margin-top: 4.5rem;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: $smallScreen) {
+  .menu-item-left {
+    display: block ;
+    .menu-img-box{
+      img{
+        margin-right: inherit;
       }
     }
-    .menu-item-text {
-      // display: block;
-      // width: 100vw;
-      // margin: 0px 0px 0px 0px;
-      // text-align: center;
+    .menu-item-text{
+      margin-left: inherit;
+      width: 95%;
+      text-align: inherit;
+      h2{
+        margin-top: 1rem;
+      }
+      margin-bottom: 2rem;
     }
-    // .menu-img-box:ntg-of-type(2){
-    //   order:2;
-    // }
+    .menu-img-box:nth-of-type(1) {
+      grid-column: 1;
+    }
+  
+    .menu-item-text:nth-of-type(2) {
+      grid-column: 2;
+    }
+    div{
+      display: block;
+    }
   }
 }
