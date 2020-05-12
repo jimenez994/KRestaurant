@@ -12,7 +12,7 @@
     vertical-align: top;
     h4{
       color: $gold;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
     display: inline-block;
     width: 31%;
@@ -24,6 +24,8 @@
     div{
       display: block;
       width: calc(100% - 2rem);
+      margin-top: 1.5rem;
+
     }
   }
 }

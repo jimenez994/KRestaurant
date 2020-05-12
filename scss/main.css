@@ -533,7 +533,6 @@ header .mobile-plate, header .cover {
 .reservation div {
   min-height: 200px;
   display: block;
-  margin-top: 8%;
 }
 
 .reservation div h1:first-child {
@@ -554,7 +553,11 @@ header .mobile-plate, header .cover {
 }
 
 @media screen and (max-width: 768px) {
+  .reservation {
+    vertical-align: middle;
+  }
   .reservation div {
+    vertical-align: middle;
     margin-top: 30%;
   }
 }
@@ -581,13 +584,13 @@ header .mobile-plate, header .cover {
 
 #contact div h4 {
   color: #d1ad89;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   #contact div {
     display: block;
     width: calc(100% - 2rem);
+    margin-top: 1.5rem;
   }
 }
 

@@ -12,12 +12,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   // text-align: center;
   div {
     min-height: 200px;
     display: block;
-    margin-top: 8%;
+    // margin-top: 8%;
     h1:first-child {
       text-transform: capitalize;
       font-family: "Great Vibes", cursive;
@@ -37,7 +36,9 @@
 }
 @media screen and (max-width: $smallScreen) {
   .reservation {
+    vertical-align: middle;
     div {
+      vertical-align: middle;
       margin-top: 30%;
     }
   }
