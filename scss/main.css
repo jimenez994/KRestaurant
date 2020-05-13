@@ -50,7 +50,7 @@
     float: none;
     width: 90%;
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto .5rem;
   }
   .card .card-textbox h1:first-of-type {
     margin-top: 0.5rem;
