@@ -20,6 +20,13 @@
       margin-top: 4.5rem;
     }
   }
+      .menu-img-box:nth-of-type(1) {
+      grid-column: 2;
+    }
+  
+    .menu-item-text:nth-of-type(2) {
+      grid-column: 1;
+    }
 }
 @media screen and (max-width: $smallScreen) {
   .menu-item-right {

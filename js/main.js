@@ -88,5 +88,22 @@ const navScroll = () => {
   });
 };
 
+// const typeEffect = () => {
+//   var content = "if life give you lemons, now i don't remember the rest of this saying. something something";
+//   // var content = 'If life is so blue, then select another colour from the rainbow';
+//   var p = document.getElementById('first');
+//   p.style.backgroundColor = "green";
+//   var ele = content.split('');
+//   var r = '';
+//   function type() {
+//     if (content.length >= r.length) {
+//       r += content[r.length];
+//       p.innerHTML = r;
+//       setTimeout(type, 20);
+//     }
+//   }
+//   type();
+// }
+// typeEffect();
 navSlide();
 navScroll();

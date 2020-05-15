@@ -47,9 +47,19 @@ header {
 @media screen and (max-width: 1300px){
   header{
     height: 800px;
+    .header-text-box{
+      margin-right: -1.5em;
+      h1{
+        font-size: 52px;
+
+      }
+    }
+    .header-image-box{
+      margin-top: 2rem;
+    }
   }
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1100px){
   header{
     height: 700px;
     .header-text-box{
@@ -60,6 +70,9 @@ header {
       button{
         margin-top: 2rem;
       }
+    }
+    .header-image-box{
+      margin-top: 5rem;
     }
   }
 }
