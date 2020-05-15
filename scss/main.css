@@ -4,55 +4,103 @@
 .card {
   margin-top: 10rem;
   max-width: 1200px;
+  height: 450px;
   display: inline-block;
   background-color: white;
   margin-bottom: 8rem;
 }
 
-.card img {
+.card .back-img {
+  width: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  margin-top: -10rem;
+}
+
+.card .top-side-img {
+  position: absolute;
+  width: 13%;
+  right: 4rem;
+}
+
+.card .card-img {
+  width: 40%;
+  margin-right: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 40%;
+  height: 450px;
   float: left;
 }
 
-.card .card-textbox {
+.card .card-text-box {
   text-align: left;
-  width: 50%;
-  margin: 1rem;
-  float: left;
+  margin: 0.5rem;
   color: black;
 }
 
-.card .card-textbox h1 {
+.card .card-text-box h1 {
   text-transform: capitalize;
   margin: 0;
 }
 
-.card .card-textbox p {
+.card .card-text-box p {
   margin-top: 2.5vh;
+}
+
+@media screen and (max-width: 1300px) {
+  .card .back-img {
+    margin-top: -5rem;
+    width: 60%;
+  }
+  .card .top-side-img {
+    right: 0.5rem;
+    margin-top: 20px;
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card .top-side-img {
+    margin-top: 40px;
+    right: 0;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card .top-side-img {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .card {
+    height: auto;
     margin-bottom: 5rem;
     margin-top: 7rem;
     display: block;
     background-color: white;
     padding-bottom: 10px;
   }
-  .card img {
+  .card .back-img {
+    display: none;
+  }
+  .card .top-side-img {
+    display: none;
+  }
+  .card .card-img {
     width: 100%;
     display: inline-block;
   }
-  .card .card-textbox {
+  .card .card-text-box {
     display: inline-block;
     float: none;
     width: 90%;
     display: inline-block;
-    margin: 0 auto .5rem;
+    margin: 0 auto 0.5rem;
   }
-  .card .card-textbox h1:first-of-type {
+  .card .card-text-box h1:first-of-type {
     margin-top: 0.5rem;
     margin-bottom: -1rem;
   }
@@ -149,25 +197,16 @@
 
 @media screen and (max-width: 768px) {
   .menu-item-right {
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .menu-item-right .menu-img-box {
-    -ms-grid-row: 1;
-    grid-row: 1;
+    display: block;
   }
   .menu-item-right .menu-img-box img {
     margin: 0 auto;
   }
   .menu-item-right .menu-item-text {
-    -ms-grid-row: 2;
-    grid-row: 2;
     margin: 0rem auto 2rem;
     width: 95%;
     text-align: inherit;
+    margin-bottom: 2rem;
   }
   .menu-item-right .menu-item-text h2 {
     margin-top: 1rem;
@@ -223,16 +262,17 @@ header .header-text-box {
 
 header .header-text-box h1 {
   font-size: 58px;
+  margin-bottom: 3rem;
 }
 
-header .header-text-box button {
-  margin-top: 3rem;
+header .header-text-box a {
   width: 7.5rem;
   height: 2.3rem;
   font-size: large;
   font-weight: bold;
-  color: #dcdada;
-  background-color: #131313;
+  color: white;
+  border: solid white 1px;
+  padding: 7px;
 }
 
 header .header-image-box {
@@ -311,8 +351,8 @@ header .mobile-plate, header .cover {
     margin: 0 auto;
     text-align: center;
   }
-  header .header-text-box button {
-    background-color: transparent;
+  header .header-text-box h1 {
+    margin-bottom: 2rem;
   }
   header .header-image-box {
     display: none;

@@ -30,25 +30,20 @@
 }
 @media screen and (max-width: $smallScreen) {
   .menu-item-right {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     .menu-img-box {
-      grid-row: 1;
       img {
         margin: 0 auto;
       }
     }
     .menu-item-text {
-      grid-row: 2;
-
       margin: 0rem auto 2rem;
       width: 95%;
       text-align: inherit;
       h2 {
         margin-top: 1rem;
       }
-      // margin-bottom: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }
