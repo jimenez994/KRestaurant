@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+// colors
+$gold: #d1ad89;
+$backColor: #5d4954;
+$white: rgb(220, 218, 218);
+
+$black: rgb(19, 19, 19);
+
+$xlScreen:  1300px;
+$lScreen:  1100px;
+$mScreen: 900px;
+$smallScreen: 768px;
+
+  .navbar {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    top: 0px;
+    left: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: $black;
+    transition: top 0.3s;
+    text-transform: capitalize;
+
+    .logo {
+      letter-spacing: 3px;
+      display: inline-block;
+      .fancy-text {
+        text-transform: capitalize;
+        font-family: "Great Vibes", cursive;
+        font-size: 2em;
+        color: $gold;
+        margin: 0;
+      }
+    }
+    .nav-links {
+
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      li {
+        list-style: none;
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+  
+      .active {
+        border-bottom: 2px solid $gold;
+      }
+  
+      a:hover {
+        border-bottom: 2px solid $gold;
+        color: white;
+      }
+  
+
+    }
+    .burger {
+      display: none;
+      div {
+        width: 25px;
+        height: 3px;
+        background-color: $white;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .navbar {
+      .nav-links {
+        width: 55%;
+      }
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .navbar {
+      .nav-links {
+        width: 67%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: $smallScreen) {
+    .navbar {
+      .logo{
+        h4{
+          font-size: x-large;
+        }
+      }
+      .nav-links {
+        padding: 0px;
+        position: fixed;
+        right: 0px;
+        height: calc(100% - 64px);
+        top: 64px;
+        background-color: $backColor;
+        flex-direction: column;
+        align-items: center;
+        width: 0;
+        transition: all 0.5s;
+        li {
+          opacity: 0;
+        }
+      }
+      .burger {
+        display: inline-block;
+        cursor: pointer;
+        color: $white;
+      }
+      .nav-active {
+        transition: width 1.5s;
+        width: 50%;
+        display: flex;
+      }
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      } to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px , 6px);
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px , -6px);
+    }
+  }
+  
+  
