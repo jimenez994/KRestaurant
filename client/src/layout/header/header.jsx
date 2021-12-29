@@ -3,7 +3,7 @@ import "./header.scss";
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState('200px');
+  const [isVisible, setIsVisible] = useState('0');
 
 
   console.log(isOpen);
