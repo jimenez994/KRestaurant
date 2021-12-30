@@ -1,20 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 // colors
-$gold: #d1ad89;
-$backColor: #5d4954;
-$white: rgb(220, 218, 218);
-
-$black: rgb(19, 19, 19);
-
-$xlScreen:  1300px;
-$lScreen:  1100px;
-$mScreen: 900px;
-$smallScreen: 768px;
+@import "../../../index.scss";
 
 .navbar {
   z-index: 5;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   position: fixed;
   width: 100%;
   max-width: inherit;
@@ -100,8 +91,8 @@ $smallScreen: 768px;
       padding: 0px;
       position: fixed;
       right: 0px;
-      height: calc(100% - 48px);
-      top: 48px;
+      height: calc(100% - 64px);
+      top: 64px;
       background-color: $backColor;
       flex-direction: column;
       align-items: center;

@@ -1,0 +1,111 @@
+@import '../../index.scss';
+
+
+.card {
+  margin-top: 10rem;
+  max-width: 1200px;
+  height: 450px;
+  display: inline-block;
+  background-color: white;
+  margin-bottom: 8rem;
+
+  .back-img {
+    width: 50%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    margin-top: -10rem;
+  }
+  .top-side-img{
+    position: absolute;
+    width: 13%;
+    right: 4rem;
+  }
+
+  .card-img {
+      width: 40%;
+      margin-right: 0.5rem;
+      object-fit: cover;
+      height: 450px;
+      float: left;
+    
+  }
+  .card-text-box {
+    text-align: left;
+    margin: 0.5rem;
+    color: black;
+    h1 {
+      text-transform: capitalize;
+      margin: 0;
+    }
+    p {
+      margin-top: 2.5vh;
+    }
+  }
+}
+@media screen and (max-width: $xlScreen){
+  .card{
+    .back-img{
+      margin-top: -5rem;
+      width: 60%;
+    }
+    .top-side-img{
+      right: 0.5rem;
+      margin-top: 20px;
+      width: 15%;
+    }
+  }
+}
+@media screen and (max-width: $lScreen){
+.card{
+  .top-side-img{
+    margin-top: 40px;
+    right: 0;
+    width: 20%;
+  }
+}
+
+
+}
+
+@media screen and (max-width: $mScreen){
+  .card{
+    .top-side-img{
+      margin-top: 30px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: $smallScreen) {
+  .card {
+    height: auto;
+    margin-bottom: 5rem;
+    margin-top: 7rem;
+    display: block;
+    background-color: white;
+    padding-bottom: 10px;
+    .back-img{
+      display: none;
+    }
+    .top-side-img{
+      display: none;
+    }
+    .card-img {
+      width: 100%;
+      display: inline-block;
+    }
+    .card-text-box {
+      h1:first-of-type {
+        margin-top: 0.5rem;
+        margin-bottom: -1rem;
+      }
+      display: inline-block;
+      float: none;
+      width: 90%;
+      display: inline-block;
+      margin: 0 auto 0.5rem;
+    }
+  }
+}

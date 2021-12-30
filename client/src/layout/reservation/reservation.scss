@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.reservation {
+
+  text-align: center;
+  margin-top: 10em;
+  // /* The image used */
+  background-image: url("../../assets/images/reservation/restaurant.jpg");
+    position: relative;
+  // /* Set a specific height */
+  height: 400px;
+
+  // /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // // text-align: center;
+  div {
+    width: 100%;
+    top: 20%;
+    position: absolute;
+
+    h1:first-child {
+      text-transform: capitalize;
+      font-family: "Great Vibes", cursive;
+      font-size: xx-large;
+      letter-spacing: 0.1em;
+    }
+    h1:last-of-type{
+      margin: 1rem;
+    }
+
+    .contact-link {
+      margin-top: 2rem;
+      border: solid 1px;
+      padding: 0.3rem;
+    }
+  }
+}
+@media screen and (max-width: $smallScreen) {
+  .reservation {
+    vertical-align: middle;
+    background-attachment: scroll;
+
+  }
+}

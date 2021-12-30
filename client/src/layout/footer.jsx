@@ -1,12 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
-const footer = () => {
+const Footer = () => {
+
+  const showCurrentYear = ()=> {
+    return new Date().getFullYear();
+}
 
   return (
-    <div>
-      footer here
-    </div>
+    <footer style={{margin:'5rem auto 1rem'}}>
+    <p><small> &copy;{showCurrentYear()} Khisko Restaurant</small></p>
+  </footer>
   )
 }
 
-export default footer
+export default Footer

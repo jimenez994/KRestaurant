@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.best-ingredients {
+  margin-top: 10em;
+  color: white;
+  h1{
+    margin: 0;
+  }
+  p{
+    width: 50%;
+    margin: 2em auto 0;
+  }
+  img{
+    width: 40%;
+    margin-top: 0em;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .best-ingredients{
+    p{
+      width: 90vw;
+    }
+    img{
+      width: 90vw;
+      margin-top: 0;
+    }
+  }
+}
