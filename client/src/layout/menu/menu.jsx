@@ -1,6 +1,6 @@
 import React from "react";
 import './menu.scss';
-import pikemacho from '../../assets/images/menu/foodp.png';
+import pikemacho from '../../assets/images/foodp.png';
 
 const Menu = () => {
   return (

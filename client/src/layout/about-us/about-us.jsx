@@ -1,8 +1,8 @@
 import React from 'react';
 import './about-us.scss';
-import jalapeno from '../../assets/images/about-us/jalapeno.png';
-import smoke2 from '../../assets/images/about-us/smoke2.png';
-import saltenas from '../../assets/images/about-us/saltenas.jpg';
+import jalapeno from '../../assets/images/jalapeno.png';
+import smoke2 from '../../assets/images/smoke2.png';
+import saltenas from '../../assets/images/saltenas.jpg';
 
 
 const aboutUs = () => { 

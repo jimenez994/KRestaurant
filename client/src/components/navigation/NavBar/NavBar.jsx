@@ -6,7 +6,7 @@ const NavBar = () => {
   
   const [isActive, setIsAisActive] = useState(false);
 
-  const initial = ["home", "about-us", "menu", "events", "contact","reservations"];
+  const initial = ["home", "about-us", "menu", "events", "contact","reservation"];
 
   const handleToggle = () => { 
     setIsAisActive(!isActive);

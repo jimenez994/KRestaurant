@@ -1,6 +1,6 @@
 import React from 'react';
 import './ingredients.scss'
-import ingredients from '../../assets/images/ingredients/ingredients.png'
+import ingredients from '../../assets/images/ingredients.png'
 
 const Ingredients = () => {
   return (

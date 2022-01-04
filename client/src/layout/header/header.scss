@@ -35,8 +35,11 @@ header {
     img {
       display: block;
       position: absolute;
-      top: 2rem;
+      top: 8rem;
       width: 100%;
+    }
+    #onions{
+      z-index: 2;
     }
     .plate {
       z-index: 1;
